@@ -1,0 +1,37 @@
+{
+  "name": "concava-adapter-influxdb",
+  "version": "0.1.0",
+  "description": "ConCaVa adapter for storage in InfluxDB.",
+  "main": "lib/adapter.js",
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile",
+    "lint": "eslint src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pre-commit": "lint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kukua/node-concava-adapter-influxdb.git"
+  },
+  "keywords": [
+    "concava",
+    "adapter",
+    "influxdb"
+  ],
+  "author": "Maurits van Mastrigt <maurits@kukua.cc>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kukua/node-concava-adapter-influxdb/issues"
+  },
+  "homepage": "https://github.com/kukua/node-concava-adapter-influxdb#readme",
+  "dependencies": {
+    "influx": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "~6.3.17",
+    "babel-preset-es2015": "~6.3.13",
+    "eslint": "~1.9.0",
+    "pre-commit": "~1.1.2"
+  }
+}
