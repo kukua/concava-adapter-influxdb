@@ -14,11 +14,11 @@ export let metadata = (req, config, data, cb) => {
 }
 
 // Storage adapter
-export let storage = (req, config, data, { SensorData }, cb) => {
+export let storage = (req, { config }, data, { SensorData }, cb) => {
 	if ( ! (data instanceof SensorData)) return cb('Invalid SensorData given.')
 
 	var point = data.getData()
-	var config = {}
+	var options = {}
 
 	// Determine timestamp
 	var timestamp = point.timestamp
@@ -29,7 +29,7 @@ export let storage = (req, config, data, { SensorData }, cb) => {
 	// > Timestamp was specified in seconds
 	if (timestamp < 10000000000000000) timestamp *= 1000
 
-	config.precision = 'ns'
+	options.precision = 'ns'
 
 	point.time = timestamp
 	delete point.timestamp
@@ -38,5 +38,5 @@ export let storage = (req, config, data, { SensorData }, cb) => {
 	var tags = { deviceId: data.getDeviceId() }
 
 	// Write point
-	getClient(config).writePoint(config.series, point, tags, config, cb)
+	getClient(config).writePoint(config.series, point, tags, options, cb)
 }
