@@ -1,6 +1,6 @@
 {
   "name": "concava-adapter-influxdb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ConCaVa adapter for storage in InfluxDB.",
   "main": "lib/adapter.js",
   "scripts": {
