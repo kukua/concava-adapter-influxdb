@@ -17,9 +17,9 @@ npm install concava-adapter-influxdb
 A ConCaVa configuration example:
 
 ```js
-import { storage } from 'concava-adapter-influxdb'
+const storage = require('concava-adapter-influxdb').storage
 
-export default {
+modules.export = {
 	debug: true,
 
 	...
@@ -38,3 +38,9 @@ export default {
 	},
 }
 ```
+
+## License
+
+This software is licensed under the [MIT license](https://github.com/kukua/node-concava-adapter-influxdb/blob/master/LICENSE).
+
+© 2016 Kukua BV
