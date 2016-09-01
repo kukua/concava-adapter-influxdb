@@ -12,7 +12,7 @@
   "pre-commit": "lint",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kukua/node-concava-adapter-influxdb.git"
+    "url": "git+https://github.com/kukua/concava-adapter-influxdb.git"
   },
   "keywords": [
     "concava",
@@ -22,9 +22,9 @@
   "author": "Kukua Team <dev@kukua.cc>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kukua/node-concava-adapter-influxdb/issues"
+    "url": "https://github.com/kukua/concava-adapter-influxdb/issues"
   },
-  "homepage": "https://github.com/kukua/node-concava-adapter-influxdb#readme",
+  "homepage": "https://github.com/kukua/concava-adapter-influxdb#readme",
   "dependencies": {
     "influx": "^4.1.0"
   },

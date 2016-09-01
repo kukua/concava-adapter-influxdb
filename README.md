@@ -41,6 +41,6 @@ modules.export = {
 
 ## License
 
-This software is licensed under the [MIT license](https://github.com/kukua/node-concava-adapter-influxdb/blob/master/LICENSE).
+This software is licensed under the [MIT license](https://github.com/kukua/concava-adapter-influxdb/blob/master/LICENSE).
 
 © 2016 Kukua BV
